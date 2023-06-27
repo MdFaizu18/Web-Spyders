@@ -1,0 +1,127 @@
+/* background-image: linear-gradient(to right,rgb(32, 0, 138),rgba(203, 0, 71, 0.829)); */
+/* container-4 and the book review  */
+.container-4{
+    display: grid;
+   grid-template-columns: 2fr 3fr;  
+   justify-content: center;
+   height: 86vh;
+   
+}
+
+.four-image {
+    height: 350px;
+    width:23vw;
+    margin-left: 80px;
+    margin-top:90px;
+
+}
+#image-4  img{
+    margin-left:30px;
+    margin-top: 20px;
+    
+}
+/* right side content for book review */
+.four-side-content{
+    justify-content: center;
+    
+}
+.header4 {
+   font-size: 33px;
+   margin-left: 180px;
+   margin-top: 70px;
+   color:darkblue;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.main-content4{
+    font-size: 22px;
+    text-align:left;
+    color:rgb(0, 9, 66);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.visit-website{
+
+  background-color: rgba(57, 57, 255, 0.86);
+  color:white;
+  padding:8px;
+  border-radius: 5px 5px 5px 5px;
+  width:150px;
+  margin-left: 22rem;
+  transition: all .5s;
+}
+.visit-website a{
+    color:white;
+    text-decoration: none;
+    margin-left: 19px;
+    
+}
+.visit-website:hover{
+    background-color: rgba(255, 0, 0, 0.679);
+    transform: scale(1.2);
+}
+
+
+
+/* container-5 and the movie review  */
+.container-5{
+    display: grid;
+   grid-template-columns: 3fr 2fr;  
+   justify-content: center;
+   height: 86vh;
+   
+}
+
+
+#image-5 img{
+    margin-left:60px;
+    margin-top: -5px;
+    
+}
+/* right side content for book review */
+.five-side-content{
+    justify-content: center;
+    
+}
+.header5 {
+   font-size: 33px;
+   margin-left: 180px;
+   margin-top: 70px;
+   color:darkblue;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.main-content5{
+    font-size: 22px;
+    text-align:left;
+    color:rgb(0, 9, 66);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+    margin-left:40px;
+    margin-bottom: 40px;
+}
+.visit-website2{
+
+  background-color: rgba(57, 57, 255, 0.86);
+  color:white;
+  padding:8px;
+  border-radius: 5px 5px 5px 5px;
+  width:150px;
+  margin-left: 22rem;
+  transition: all .5s;
+}
+.visit-website2 a{
+    color:white;
+    text-decoration: none;
+    margin-left: 19px;
+    
+}
+.visit-website2:hover{
+    background-color: rgba(255, 0, 0, 0.679);
+    transform: scale(1.2);
+}
+#image-6 img{
+    margin-left:95px;
+    margin-top: 100px;
+    
+}

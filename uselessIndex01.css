@@ -1,0 +1,236 @@
+ /* For defining the box layout  */
+*{
+    box-sizing: border-box;
+}
+html ,body{
+    margin:0px;
+    padding:0;
+    /* width:100vw; */
+    
+    
+}
+
+/* The whole container of the web 
+first container */
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns:70px 100px 5fr 1fr;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.896);
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.123);
+    position: sticky;
+    top: 0%; 
+}
+/* webspyders logo */
+.logo1 img{
+    height:70px;
+    width:70px;
+    margin-top: 10px ;
+    margin-left: 3px;
+}
+.logo img{
+    height:70px;
+    width:180px;
+    margin-top:15px;
+    
+}
+
+/* For navigation bar */
+.navbar{
+display: grid;
+justify-self: right;
+
+}
+.navbar li{
+    float: left;
+    list-style-type: none;
+    color:rgb(219, 19, 19); 
+    position: relative;  
+}
+.navbar ul a{
+    display: inline-block;
+    text-decoration: none;
+    padding:16px;
+    
+    font-size: 25px;
+    
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Patua One', cursive;
+    font-family: 'Roboto Slab', serif;
+    cursor:pointer;
+    transition: all .5s;
+    font-weight: 400;
+    
+ 
+
+}
+.navbar ul li a:active{
+    color:red;
+
+}
+.navbar ul a:hover{
+    transform: scale(1.2);
+}
+
+/* dropdown menu  *//
+
+.submenu{
+    display: none;
+    z-index:1;
+    position: absolute;
+    background-color: black;
+    overflow: auto;
+    min-width:168px;
+    box-shadow: rgba(0,0,0,0.5);
+
+}
+
+/* Login button */
+.login li{
+    list-style-type: none;
+    font-size: 25px;
+    position: absolute;
+    margin-left:50px;
+    top:22px;
+    color:white;
+    background-color: rgba(218, 37, 37, 0.896);
+    padding:10px 20px;
+    border-radius: 15px 5px 15px 5px;
+    transition: all .5s;
+    font-family: italic;
+    transform: skewX(-20deg);
+    box-shadow: 2px 2px 5px black;
+    cursor:pointer;
+}
+.login li:active{
+    transform: scale(1.7);
+}
+
+
+/* First Container is finished */
+/* now contaniner 2 */
+.container-2{
+    /* rgba(0, 0, 255, 0.737),rgba(255, 0, 0, 0.715) */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to right,rgb(32, 0, 138),rgba(203, 0, 71, 0.829));
+    height:700px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/* main content */
+.mainc2{
+  color:white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+  margin-left: 65px;
+  font-weight: unset;
+  font-size: 23px;
+  margin-top: 40px;
+}
+.mainc2-p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+/* talk to expert buttons */
+.talk{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.911);
+    color:rgba(0, 0, 0, 0.577);
+    padding:5px;
+    height: 35px;
+    width:20vw;
+    border-radius:15px 15px 15px 15px;
+    transition: all .5s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);
+    font-size: 20px;
+    border:none;
+}
+.talk span{
+    position: relative;
+    display: inline-block;
+    transition: .5s;
+}
+.talk span::after{
+    content: ' \00bb';
+    position:absolute;
+    opacity:0;
+    /* top:0; */
+    right:-15px;
+    transition: .5s;
+}
+.talk:hover span{
+    padding-right: 25px;
+}
+.talk:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+/* Register form  */
+.register-form{
+    height: 480px;
+    width:28vw;
+    background-color: white;
+    justify-self: center;
+    margin-left: 120px;
+    margin-top:50px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.358);
+    padding:33px;
+    
+}
+.register-form h3{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:navy;
+    border-bottom-style: solid;
+    width: fit-content;
+    margin-left: 32%;
+   
+}
+.register-sub {
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    color: rgb(54, 54, 209);
+    text-align: center;
+}
+.form-content{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(100, 103, 103);
+}
+input[type=text],[type=password],[type=email]{
+    border: none;
+    border-bottom: 2px solid rgb(237, 32, 32);
+    width: 100%;
+    padding:8px;
+    margin-bottom: 10px;
+    /* margin:5px; */
+}
+
+input[type=text],[type=email],[type=password]:focus{
+     outline: none;
+}
+.reg-submit{
+     text-align: center;
+     margin-top: 40px;
+     background-color:rgba(218, 37, 37, 0.896) ;
+     color:white;
+     padding:10px;
+     border-radius: 20px 20px 20px 20px;
+     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.39);
+     transition: all .5s;
+}
+.reg-submit:active{
+         transform: scale(0.9);
+}
+.reg-submit:hover{
+    opacity: 0.8;
+   
+}
